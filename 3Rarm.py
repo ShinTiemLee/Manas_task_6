@@ -31,7 +31,8 @@ wy=y-a3*math.sin(phi)
     theta3_2=phi-theta1_2-theta2_2 '''
 if 1 :    
     alpha=math.atan(wy/wx)
-    theta2_1=theta2_2=pi-math.acos((a1*a1+a2*a2-wx*wx-wy*wy)/(2*a1*a2))
+    theta2_1=pi-math.acos((a1*a1+a2*a2-wx*wx-wy*wy)/(2*a1*a2))
+    theta2_2=pi-math.acos((a1*a1+a2*a2-wx*wx-wy*wy)/(2*a1*a2))
     theta1_1=alpha-math.acos((wx*wx+wy*wy+a1*a1-a2*a2)/(2*a1*math.sqrt(wx*wx+wy*wy)))
     theta1_2=alpha+math.acos((wx*wx+wy*wy+a1*a1-a2*a2)/(2*a1*math.sqrt(wx*wx+wy*wy)))
     #print("%f %f \n%f %f \n%f %f"%(theta1_1*180/pi,theta1_2*180/pi,theta2_1*180/pi,theta2_2*180/pi,theta3_1*180/pi,theta3_2*180/pi))
