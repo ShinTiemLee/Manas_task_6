@@ -30,8 +30,11 @@ int main()
         phi=atan(y/x);
     }
     std::cout<<theta1_1*180/pi<<"\t"<<theta2_1*180/pi<<"\t"<<phi*180/pi<<"\t";
+    std::cout<<"\n The coordinates for link 1 is:\n";
     polarxy(a1,theta1_1);
+    std::cout<<"\n The coordinates for link 2 is:\n";
     polarxy(a2,theta2_1);
+    std::cout<<"\n The coordinates for link 3 is:\n";
     polarxy(a3,phi);
     
 
