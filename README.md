@@ -2,7 +2,7 @@
 
 _File: 3Rarm.py_
 
-A 3 R planar robotic arm simulator in python using geometric method.
+A 3 R planar robotic arm simulation in python using geometric method.
 
 _File: 3Rarm.cpp_
 
@@ -11,4 +11,5 @@ if the point of to be extended to is out of the work space, the arms extend to t
 
 _File: Pseudo.txt_
 
-A pseudo code to control a vehicle which is to be at the centre of two walls extended infinitely with turns and bumps on the wall surfaces.
+A pseudo code to control a vehicle which is to be maintained at the centre of two walls extended infinitely with turns and bumps on the wall surfaces.
+Two distance sensors are attached on the led=ft and right of the vehicle.

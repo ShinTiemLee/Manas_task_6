@@ -1,0 +1,15 @@
+speed=5km/hr;   // base speed
+angle_theta;    // angle by which wheels rotate
+dist_l=sen_val_l;   //left sensor value
+dist_r=sen_val_r;   //right sensor value
+ideal_dist=(dist_l+dist_r)/2;  //centre position
+past_err=error;                //previous error value stored in other variable
+error=sen_val_l-sen_val_r;     //present error
+Kp,Ki,Kd;                      //gains
+delta_t=T2-T1;                   
+delta_err=error-past_err;
+int_term=error+past_err;
+PID_out=Kp*error+Ki*int_term+Kd*(delta_err/delt_t);  //equation for PID output
+//if sensor value of left > right i.e.
+//if +ve then wheels turn anticlockwise by angle_theta 
+//else -ve then wheels turn clockwise by angle_theta
